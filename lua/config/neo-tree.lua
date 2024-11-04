@@ -1,1 +1,1 @@
-vim.keymap.set('n','<leader>e',':Neotree left <CR>') 
+vim.keymap.set('n','<leader>e',':Neotree toggle left <CR>') 
