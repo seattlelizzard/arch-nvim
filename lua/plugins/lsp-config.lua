@@ -15,6 +15,10 @@ return {
   },
   {
     "williamboman/mason-lspconfig.nvim",
+    lazy = false,
+    opts = {
+      auto_instal = true,
+    },
     config = function()
       require("mason-lspconfig").setup({
         ensure_installed = {
