@@ -33,4 +33,3 @@ vim.cmd('highlight NeoTreeIndentMarker guibg=NONE ctermbg=NONE')
 vim.cmd('highlight NeoTreeCursorLine guibg=NONE ctermbg=NONE')
 vim.cmd('highlight NeoTreeGitModified guibg=NONE ctermbg=NONE')
 vim.cmd('highlight NeoTreeGitDeleted guibg=NONE ctermbg=NONE')
-
