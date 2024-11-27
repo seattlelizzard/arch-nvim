@@ -440,6 +440,30 @@ require("telescope").setup({
   { "folke/which-key.nvim", lazy = true },
 } 
 #+end_src
+*** Lazygit
+#+begin_src lua :tangle ./lua/plugins/lazygit.lua
+-- nvim v0.8.0
+return {
+    "kdheepak/lazygit.nvim",
+    lazy = true,
+    cmd = {
+        "LazyGit",
+        "LazyGitConfig",
+        "LazyGitCurrentFile",
+        "LazyGitFilter",
+        "LazyGitFilterCurrentFile",
+    },
+    -- optional for floating window border decoration
+    dependencies = {
+        "nvim-lua/plenary.nvim",
+    },
+    -- setting the keybinding for LazyGit with 'keys' is recommended in
+    -- order to load the plugin when the command is run for the first time
+    keys = {
+        { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
+    }
+}
+#+end_src
 ** Config
 *** Lazy
 #+begin_src lua :tangle ./lua/config/lazy.lua
